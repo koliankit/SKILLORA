@@ -1,0 +1,9 @@
+node_modules
+.next
+**/android
+**/*.apk
+docs
+.github
+docker-compose.yml
+render.yaml
+services/api/Dockerfile

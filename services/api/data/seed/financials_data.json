@@ -1,0 +1,64 @@
+{
+  "summary": {
+    "annual_recurring_revenue": 1420800,
+    "monthly_recurring_revenue": 118400,
+    "mrr_growth_rate_pct": 11.8,
+    "cash_balance": 1240000,
+    "monthly_gross_burn": 112000,
+    "monthly_net_burn": 48200,
+    "runway_months": 25.7,
+    "gross_margin_pct": 74.2,
+    "lifetime_value": 78000,
+    "customer_acquisition_cost": 11200,
+    "ltv_cac_ratio": 6.96
+  },
+  "revenue_breakdown": [
+    { "category": "Enterprise Cloud SaaS", "amount_monthly": 80500, "share_pct": 68 },
+    { "category": "Edge AI Gateway Hardware Lease", "amount_monthly": 26048, "share_pct": 22 },
+    { "category": "Custom AI Model Integration", "amount_monthly": 11852, "share_pct": 10 }
+  ],
+  "monthly_financials_2025_2026": [
+    { "month": "Oct 2025", "revenue": 72400, "expenses": 89000, "net_profit": -16600, "burn": 16600 },
+    { "month": "Nov 2025", "revenue": 76800, "expenses": 91200, "net_profit": -14400, "burn": 14400 },
+    { "month": "Dec 2025", "revenue": 81500, "expenses": 94000, "net_profit": -12500, "burn": 12500 },
+    { "month": "Jan 2026", "revenue": 87200, "expenses": 97800, "net_profit": -10600, "burn": 10600 },
+    { "month": "Feb 2026", "revenue": 92100, "expenses": 99500, "net_profit": -7400, "burn": 7400 },
+    { "month": "Mar 2026", "revenue": 96800, "expenses": 102000, "net_profit": -5200, "burn": 5200 },
+    { "month": "Apr 2026", "revenue": 101400, "expenses": 104500, "net_profit": -3100, "burn": 3100 },
+    { "month": "May 2026", "revenue": 105800, "expenses": 106200, "net_profit": -400, "burn": 400 },
+    { "month": "Jun 2026", "revenue": 109200, "expenses": 108400, "net_profit": 800, "burn": -800 },
+    { "month": "Jul 2026", "revenue": 112600, "expenses": 110100, "net_profit": 2500, "burn": -2500 },
+    { "month": "Aug 2026", "revenue": 115900, "expenses": 111300, "net_profit": 4600, "burn": -4600 },
+    { "month": "Sep 2026", "revenue": 118400, "expenses": 112000, "net_profit": 6400, "burn": -6400 }
+  ],
+  "expense_categories": [
+    { "category": "R&D & Engineering Payroll", "amount": 62500, "percentage": 55.8 },
+    { "category": "Cloud & GPU Infrastructure (AWS/GCP)", "amount": 21300, "percentage": 19.0 },
+    { "category": "Sales & Enterprise Marketing", "amount": 12800, "percentage": 11.4 },
+    { "category": "Operations, Logistics & Facilities", "amount": 9600, "percentage": 8.6 },
+    { "category": "Legal, Compliance & Audit", "amount": 5800, "percentage": 5.2 }
+  ],
+  "scenario_models": [
+    {
+      "name": "Base Plan (Current Trajectory)",
+      "mrr_year_end": 178000,
+      "runway_months": 25.7,
+      "profitability_status": "Cashflow positive by Q1 2027",
+      "risk_level": "Low"
+    },
+    {
+      "name": "Aggressive Hiring (Add 6 AI Engineers)",
+      "mrr_year_end": 215000,
+      "runway_months": 16.2,
+      "profitability_status": "Requires Series A closing by month 12",
+      "risk_level": "Medium"
+    },
+    {
+      "name": "Cloud Optimization & Price Increase (+15%)",
+      "mrr_year_end": 204000,
+      "runway_months": 34.0,
+      "profitability_status": "Cashflow positive immediately",
+      "risk_level": "Very Low"
+    }
+  ]
+}

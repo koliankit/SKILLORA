@@ -1,0 +1,154 @@
+{
+  "kpis": [
+    {
+      "id": "kpi_mrr",
+      "name": "Monthly Recurring Revenue (MRR)",
+      "category": "Finance",
+      "current_value": 118400,
+      "target_value": 135000,
+      "unit": "USD",
+      "trend": "up",
+      "change_pct": 11.8,
+      "owner": "Ankit Sharma (CEO)",
+      "frequency": "monthly",
+      "status": "on_track"
+    },
+    {
+      "id": "kpi_fleet_sla",
+      "name": "Mission Telemetry SLA Uptime",
+      "category": "Operations",
+      "current_value": 99.88,
+      "target_value": 99.50,
+      "unit": "%",
+      "trend": "up",
+      "change_pct": 0.12,
+      "owner": "Ops Team",
+      "frequency": "daily",
+      "status": "exceeded"
+    },
+    {
+      "id": "kpi_edge_latency",
+      "name": "Edge Inference & Sync Latency",
+      "category": "Engineering",
+      "current_value": 34.2,
+      "target_value": 45.0,
+      "unit": "ms",
+      "trend": "up",
+      "change_pct": -8.5,
+      "owner": "Dr. Ramesh Nair (CTO)",
+      "frequency": "weekly",
+      "status": "exceeded"
+    },
+    {
+      "id": "kpi_gross_margin",
+      "name": "Gross Profit Margin",
+      "category": "Finance",
+      "current_value": 74.2,
+      "target_value": 78.0,
+      "unit": "%",
+      "trend": "up",
+      "change_pct": 2.4,
+      "owner": "Finance Team",
+      "frequency": "monthly",
+      "status": "on_track"
+    },
+    {
+      "id": "kpi_churn",
+      "name": "Monthly Customer Churn",
+      "category": "Sales",
+      "current_value": 0.72,
+      "target_value": 1.20,
+      "unit": "%",
+      "trend": "up",
+      "change_pct": -0.15,
+      "owner": "Customer Success",
+      "frequency": "monthly",
+      "status": "exceeded"
+    },
+    {
+      "id": "kpi_burn",
+      "name": "Monthly Gross Burn",
+      "category": "Finance",
+      "current_value": 112000,
+      "target_value": 120000,
+      "unit": "USD",
+      "trend": "flat",
+      "change_pct": 1.2,
+      "owner": "Finance Lead",
+      "frequency": "monthly",
+      "status": "on_track"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "wf_001",
+      "name": "Statutory Drone Flight Clearance & Telemetry Ingestion",
+      "trigger": "New flight mission plan uploaded via API",
+      "condition": "Airspace classification verified via DGCA DigitalSky check",
+      "action": "Dispatch edge cryptographic tokens & start real-time anomaly monitoring",
+      "status": "active",
+      "runs_this_month": 1842,
+      "success_rate": 99.9
+    },
+    {
+      "id": "wf_002",
+      "name": "Tier-1 Anomaly Incident Auto-Escalation",
+      "trigger": "Edge sync heartbeat latency > 120ms for > 15s",
+      "condition": "Severity >= P1 (Mission In-Flight)",
+      "action": "Trigger failover satellite telemetry & page on-call SRE lead via Slack/SMS",
+      "status": "active",
+      "runs_this_month": 7,
+      "success_rate": 100
+    },
+    {
+      "id": "wf_003",
+      "name": "Bi-Weekly Vendor Invoice Approval & Reconciliation",
+      "trigger": "Invoice received over $5,000",
+      "condition": "Within budget & verified against Goods Received Note (GRN)",
+      "action": "Request dual sign-off (Dept Head + Finance) and route to ERP",
+      "status": "active",
+      "runs_this_month": 44,
+      "success_rate": 97.7
+    },
+    {
+      "id": "wf_004",
+      "name": "Enterprise RBAC Provisioning & Key Rotation",
+      "trigger": "Employee onboarded or 90-day timer elapsed",
+      "condition": "Organization audit flag enabled",
+      "action": "Generate zero-trust KMS keys and notify IT Security",
+      "status": "active",
+      "runs_this_month": 18,
+      "success_rate": 100
+    }
+  ],
+  "processes": [
+    {
+      "stage": "1. Lead Qualification",
+      "lead_time": "2 Days",
+      "owner": "Sales Team",
+      "bottleneck_risk": "Low",
+      "automation_level": "80%"
+    },
+    {
+      "stage": "2. Security & Compliance Review",
+      "lead_time": "5 Days",
+      "owner": "Legal & InfoSec",
+      "bottleneck_risk": "Medium (SOC2 questionnaire review)",
+      "automation_level": "55%"
+    },
+    {
+      "stage": "3. Edge Gateway Deployment",
+      "lead_time": "4 Days",
+      "owner": "Hardware Operations",
+      "bottleneck_risk": "Low",
+      "automation_level": "40%"
+    },
+    {
+      "stage": "4. API Onboarding & Fleet Sync",
+      "lead_time": "1 Day",
+      "owner": "Solutions Engineering",
+      "bottleneck_risk": "Low",
+      "automation_level": "95%"
+    }
+  ]
+}

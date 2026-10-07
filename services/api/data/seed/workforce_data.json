@@ -1,0 +1,110 @@
+{
+  "department_distribution": [
+    { "department": "AI & Robotics Engineering", "headcount": 12, "budget_share_pct": 46 },
+    { "department": "Cloud & Platform Infrastructure", "headcount": 6, "budget_share_pct": 22 },
+    { "department": "Operations & Hardware Quality", "headcount": 4, "budget_share_pct": 12 },
+    { "department": "Sales, Enterprise & Marketing", "headcount": 4, "budget_share_pct": 13 },
+    { "department": "Finance, Legal & People", "headcount": 2, "budget_share_pct": 7 }
+  ],
+  "employees": [
+    {
+      "id": "emp_001",
+      "name": "Ankit Sharma",
+      "role": "Founder & Chief Executive Officer",
+      "department": "Executive Leadership",
+      "skills": ["Enterprise Strategy", "Product Vision", "Fundraising", "B2B Sales"],
+      "status": "Active",
+      "join_date": "2024-03-15",
+      "location": "Bengaluru"
+    },
+    {
+      "id": "emp_002",
+      "name": "Dr. Ramesh Nair",
+      "role": "Co-Founder & Chief Technology Officer",
+      "department": "AI & Robotics Engineering",
+      "skills": ["ROS2", "Computer Vision", "Edge AI", "Distributed Systems", "C++"],
+      "status": "Active",
+      "join_date": "2024-03-15",
+      "location": "Bengaluru"
+    },
+    {
+      "id": "emp_003",
+      "name": "Pooja Deshmukh",
+      "role": "VP of Engineering",
+      "department": "Cloud & Platform Infrastructure",
+      "skills": ["Kubernetes", "Next.js", "Python FastAPI", "PostgreSQL", "Kafka"],
+      "status": "Active",
+      "join_date": "2024-06-01",
+      "location": "Hyderabad"
+    },
+    {
+      "id": "emp_004",
+      "name": "Vikram Sen",
+      "role": "Staff Robotics & Telemetry Engineer",
+      "department": "AI & Robotics Engineering",
+      "skills": ["ROS2", "Rust", "RTOS", "PX4 Autopilot", "CAN Bus"],
+      "status": "Active",
+      "join_date": "2024-08-15",
+      "location": "Bengaluru"
+    },
+    {
+      "id": "emp_005",
+      "name": "Sneha Iyer",
+      "role": "Head of Enterprise Compliance & Finance",
+      "department": "Finance, Legal & People",
+      "skills": ["SOC2 Type II", "ISO 27001", "ROC Filings", "Financial Modeling", "GST Audits"],
+      "status": "Active",
+      "join_date": "2024-09-01",
+      "location": "Bengaluru"
+    },
+    {
+      "id": "emp_006",
+      "name": "Aman Verma",
+      "role": "Senior Enterprise Sales Director",
+      "department": "Sales, Enterprise & Marketing",
+      "skills": ["Enterprise SaaS", "Contract Negotiation", "Government RFP", "Solution Architecture"],
+      "status": "Active",
+      "join_date": "2025-01-10",
+      "location": "Hyderabad"
+    }
+  ],
+  "skill_inventory": [
+    { "skill": "ROS2 & Robotics Middleware", "proficiency_level": "Advanced", "team_coverage": 8, "criticality": "Critical" },
+    { "skill": "Edge AI & ONNX Runtime", "proficiency_level": "Advanced", "team_coverage": 6, "criticality": "Critical" },
+    { "skill": "Distributed Systems & Rust", "proficiency_level": "Intermediate", "team_coverage": 4, "criticality": "High" },
+    { "skill": "ISO 27001 & InfoSec Compliance", "proficiency_level": "Advanced", "team_coverage": 3, "criticality": "High" },
+    { "skill": "Defense & DGCA Regulations", "proficiency_level": "Intermediate", "team_coverage": 2, "criticality": "High" }
+  ],
+  "skill_gaps": [
+    {
+      "gap_area": "High-Reliability Satellite Telemetry Architect",
+      "impact": "Required for BVLOS (Beyond Visual Line of Sight) certifications",
+      "recommended_action": "Recruit 1 Principal Satellite Systems Engineer in Q4",
+      "priority": "High"
+    },
+    {
+      "gap_area": "AS9100 Aerospace Quality Lead",
+      "impact": "Expedites defense drone contract qualification",
+      "recommended_action": "Sponsor internal certification for 2 senior ops engineers",
+      "priority": "Medium"
+    }
+  ],
+  "candidate_pipeline": [
+    {
+      "candidate_name": "Arjun Menon",
+      "target_role": "Staff Rust Telemetry Engineer",
+      "match_score": 92,
+      "experience_years": 7,
+      "status": "Final Technical Round",
+      "ai_evaluation_summary": "Extensive experience in low-latency packet streaming; verified strong background in embedded Linux."
+    },
+    {
+      "candidate_name": "Divya Krishnan",
+      "target_role": "Enterprise InfoSec Specialist",
+      "match_score": 88,
+      "experience_years": 5,
+      "status": "Interview Scheduled",
+      "ai_evaluation_summary": "Led SOC2 audit at Series B logistics company; strong NIST CSF grounding."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "organization": {
+    "id": "org_skillora_001",
+    "name": "AeroSync Dynamics Pvt Ltd",
+    "legal_name": "AeroSync Dynamics Technologies Private Limited",
+    "cin": "U72900KA2024PTC184920",
+    "founded_year": 2024,
+    "industry": "Enterprise Robotics & AI Infrastructure",
+    "sub_industry": "Autonomous Fleet Telemetry & Edge AI",
+    "stage": "growth",
+    "team_size": 28,
+    "hq_location": "Bengaluru, Karnataka, India",
+    "secondary_office": "Hyderabad, Telangana, India",
+    "founders": [
+      { "name": "Ankit Sharma", "role": "Founder & Chief Executive Officer", "email": "ankit@aerosync.ai" },
+      { "name": "Dr. Ramesh Nair", "role": "Co-Founder & Chief Technology Officer", "email": "ramesh@aerosync.ai" }
+    ],
+    "business_model": "Hybrid B2B SaaS + Edge Hardware Gateway Leases",
+    "target_customers": "Autonomous drone operators, industrial inspection firms, mining logistics, and smart warehouse enterprises",
+    "value_proposition": "Unified AI operating system for enterprise autonomous robotics fleets with real-time telemetry processing, predictive health diagnostics, and zero human intervention mission routing.",
+    "website": "https://aerosync.ai",
+    "currency": "INR",
+    "display_currency": "USD / INR",
+    "created_at": "2024-03-15T09:30:00Z"
+  },
+  "health_score": {
+    "overall": 84,
+    "grade": "A- (Robust)",
+    "finance": 81,
+    "operations": 89,
+    "sales": 78,
+    "workforce": 88,
+    "compliance": 85,
+    "last_assessed": "2026-09-12T18:00:00Z",
+    "trend": "+4.2% from last month",
+    "methodology": "Weighted multi-variate assessment: Financial Runway (25%), Fleet Ops Reliability (25%), Pipeline Conversion (20%), Workforce Retention & Skill Coverage (15%), Statutory Compliance (15%)."
+  }
+}

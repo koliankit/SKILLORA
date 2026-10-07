@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SKILLORA</string>
+    <string name="title_activity_main">SKILLORA</string>
+    <string name="package_name">ai.skillora.app</string>
+    <string name="custom_url_scheme">ai.skillora.app</string>
+</resources>

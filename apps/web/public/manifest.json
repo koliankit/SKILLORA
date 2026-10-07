@@ -1,0 +1,11 @@
+{
+  "name": "SKILLORA — Build smarter. Manage better. Grow with AI.",
+  "short_name": "SKILLORA",
+  "description": "AI-powered entrepreneurship and enterprise management platform",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#17181C",
+  "theme_color": "#17181C",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

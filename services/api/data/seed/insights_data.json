@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ins_001",
+    "category": "Finance & Cloud",
+    "observation": "Cloud GPU infrastructure costs grew 14% MoM while active fleet hours grew 31%.",
+    "evidence": "Ledger AWS/GCP bills + Fleet Telemetry Logs (3,400 flight hours in Aug vs 4,450 in Sep)",
+    "interpretation": "Batch inference amortization is beginning to show positive unit economics, but idle spot instance timeouts remain unoptimized during night shifts (01:00 - 06:00 IST).",
+    "recommended_action": "Enable dynamic auto-scaling sleep thresholds for non-mission edge replica pods; modeled to save $3,200/month.",
+    "confidence": "high",
+    "limitation": "Assumes current telemetry stream compression ratio stays constant at 8.4:1.",
+    "created_at": "2026-09-12T16:30:00Z"
+  },
+  {
+    "id": "ins_002",
+    "category": "Sales & Pipeline",
+    "observation": "Enterprise sales cycle shortened from 42 days to 28 days for clients using the pre-configured DGCA compliance sandbox.",
+    "evidence": "CRM Pipeline records for last 6 signed enterprise accounts",
+    "interpretation": "Regulatory compliance validation is the primary trust bottleneck during enterprise pilot evaluation.",
+    "recommended_action": "Surface one-click DigitalSky audit report generation directly within client sandbox dashboards.",
+    "confidence": "high",
+    "limitation": "Sample size limited to 6 closed-won deals in Q2-Q3.",
+    "created_at": "2026-09-11T12:15:00Z"
+  },
+  {
+    "id": "ins_003",
+    "category": "Workforce & R&D",
+    "observation": "Critical dependency identified on single engineer for PX4 autopilot CAN-bus firmware stack.",
+    "evidence": "Git commit telemetry & PR reviews (91% of firmware commits by Vikram Sen)",
+    "interpretation": "Key-person risk for hardware avionics layer during upcoming Q4 mass deployment.",
+    "recommended_action": "Pair Vikram Sen with junior robotics engineer and document architecture specs in internal knowledge base.",
+    "confidence": "medium",
+    "limitation": "Does not account for external contractor capabilities if engaged.",
+    "created_at": "2026-09-10T09:00:00Z"
+  },
+  {
+    "id": "ins_004",
+    "category": "Statutory Compliance",
+    "observation": "ROC Annual Filing (AOC-4 & MGT-7) due date is in 18 days.",
+    "evidence": "MCA Compliance Calendar & uploaded auditor draft resolution",
+    "interpretation": "CA verification complete; awaiting final digital signature (DSC) of board directors.",
+    "recommended_action": "Schedule board resolution sign-off by 2026-09-18 to ensure zero penalty filing.",
+    "confidence": "high",
+    "limitation": "Subject to MCA portal server uptime and DSC token validity.",
+    "created_at": "2026-09-12T08:00:00Z"
+  }
+]

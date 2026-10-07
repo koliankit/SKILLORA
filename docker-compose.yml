@@ -1,0 +1,45 @@
+# Local development stack: API + web (+ Postgres for upcoming persistence).
+#   cp .env.example .env && docker compose up
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: skillora-db
+    environment:
+      POSTGRES_USER: skillora
+      POSTGRES_PASSWORD: skillora
+      POSTGRES_DB: skillora
+    ports: ["5432:5432"]
+    volumes: ["skillora_pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skillora"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: ./services/api
+    container_name: skillora-api
+    env_file: [.env]
+    environment:
+      CORS_ORIGINS: http://localhost:3000
+    ports: ["8000:8000"]
+    volumes: ["./services/api:/app"]
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  web:
+    image: node:20-alpine
+    container_name: skillora-web
+    working_dir: /app
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      NEXT_TELEMETRY_DISABLED: "1"
+    ports: ["3000:3000"]
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+      - "/app/apps/web/.next"
+    command: sh -c "npm install --no-audit --no-fund && npm run dev --workspace=apps/web -- --hostname 0.0.0.0"
+    depends_on: [api]
+
+volumes:
+  skillora_pgdata:

@@ -1,0 +1,47 @@
+## SKILLORA — Render blueprint (optional alternative to Vercel)
+## Frontend (Next.js) + API (FastAPI). Postgres/Redis are not used by the code yet, so they are not provisioned.
+services:
+  - type: web
+    name: skillora-web
+    runtime: node
+    region: singapore
+    plan: starter
+    rootDir: apps/web
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://skillora-api.onrender.com   # must include https:// — Render's fromService "host" does not
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+
+  - type: web
+    name: skillora-api
+    runtime: python
+    region: singapore
+    plan: starter
+    rootDir: services/api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: https://skillora-web.onrender.com
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "60"
+
+# When persistence is added, provision a database here:
+# databases:
+#   - name: skillora-db
+#     region: singapore
+#     plan: starter
+#     databaseName: skillora

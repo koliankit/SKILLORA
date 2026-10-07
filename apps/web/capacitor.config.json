@@ -1,0 +1,7 @@
+{
+  "appId": "ai.skillora.app",
+  "appName": "SKILLORA",
+  "webDir": "out",
+  "backgroundColor": "#17181C",
+  "server": { "androidScheme": "https" }
+}

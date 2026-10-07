@@ -1,0 +1,95 @@
+{
+  "compliance_status": {
+    "score": 85,
+    "completed_items": 14,
+    "pending_items": 2,
+    "overdue_items": 0,
+    "next_deadline": "2026-09-30 (ROC Annual Return Filing)"
+  },
+  "items": [
+    {
+      "id": "comp_001",
+      "name": "ROC Form AOC-4 & MGT-7 (Annual Return)",
+      "category": "Corporate Law (MCA)",
+      "due_date": "2026-09-30",
+      "owner": "Sneha Iyer (Compliance)",
+      "status": "In Progress (Drafted & Verified by CA)",
+      "criticality": "Critical",
+      "evidence_ref": "DOC-MCA-2026-09"
+    },
+    {
+      "id": "comp_002",
+      "name": "Monthly GSTR-3B & GSTR-1 Reconciliation",
+      "category": "Taxation (GST)",
+      "due_date": "2026-09-20",
+      "owner": "Finance Team",
+      "status": "In Progress",
+      "criticality": "High",
+      "evidence_ref": "GSTN-29AABCA1234F1Z5"
+    },
+    {
+      "id": "comp_003",
+      "name": "Quarterly TDS Return (Form 26Q)",
+      "category": "Direct Tax",
+      "due_date": "2026-10-31",
+      "owner": "Finance Team",
+      "status": "Compliant",
+      "criticality": "Medium",
+      "evidence_ref": "ITD-TDS-Q1-ACK"
+    },
+    {
+      "id": "comp_004",
+      "name": "ISO/IEC 27001:2022 Surveillance Audit",
+      "category": "Information Security",
+      "due_date": "2026-11-15",
+      "owner": "Pooja Deshmukh (VP Eng)",
+      "status": "Compliant",
+      "criticality": "Critical",
+      "evidence_ref": "BSI-ISO27001-CERT-2025"
+    },
+    {
+      "id": "comp_005",
+      "name": "DGCA NPNT (No Permission, No Takeoff) Firmware Certification",
+      "category": "Civil Aviation (DGCA)",
+      "due_date": "2026-10-15",
+      "owner": "Vikram Sen (Robotics Lead)",
+      "status": "Compliant",
+      "criticality": "Critical",
+      "evidence_ref": "DGCA-DIGITALSKY-FIRMWARE-V3"
+    }
+  ],
+  "audit_trail": [
+    {
+      "timestamp": "2026-09-12T17:42:10Z",
+      "actor": "ankit@aerosync.ai",
+      "role": "Founder / CEO",
+      "action": "Triggered AI Financial Scenario Model: Cloud Optimization",
+      "ip_address": "103.15.22.84",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-12T14:15:33Z",
+      "actor": "sneha@aerosync.ai",
+      "role": "Head of Compliance",
+      "action": "Uploaded draft Board Resolution for ROC Filing AOC-4",
+      "ip_address": "49.207.180.11",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-12T11:05:02Z",
+      "actor": "system_workflow_engine",
+      "role": "Autonomous Service Worker",
+      "action": "Executed Workflow WF-001 (Flight Clearance Tokens generated: 142 missions)",
+      "ip_address": "10.0.4.19",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-11T19:30:00Z",
+      "actor": "ramesh@aerosync.ai",
+      "role": "Co-Founder / CTO",
+      "action": "Updated Edge Inference KPI baseline from 38ms to 34.2ms",
+      "ip_address": "103.15.22.85",
+      "status": "SUCCESS"
+    }
+  ]
+}
